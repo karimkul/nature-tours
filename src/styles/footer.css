@@ -1,0 +1,97 @@
+.footer {
+    background-color: #f7f9fc; /* Light neutral background */
+    color: #2d3436; /* Dark gray text */
+    padding: 1.5rem 1.5rem; /* Reduced padding to compact the footer */
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items at the top */
+    flex-wrap: wrap;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow to the top of the footer */
+}
+
+.footer-brand {
+    font-size: 1.6rem; /* Slightly smaller brand font size */
+    font-weight: bold;
+    color: #0072ff;
+    margin-left: 20px;
+    display: inline-block;
+    align-self: flex-start;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 75%;
+    flex-wrap: wrap;
+    margin-left: 30px;
+}
+
+.footer-explore,
+.footer-connect,
+.footer-services {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30%;
+    margin-bottom: 1rem; /* Reduced bottom margin */
+}
+
+.footer h4 {
+    font-size: 1.1rem; /* Reduced font size for headings */
+    margin-bottom: 0.5rem; /* Reduced margin below headings */
+    color: #333;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 8px; /* Reduced space between list items */
+}
+
+.footer a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #0072ff;
+}
+
+.footer .footer-copy {
+    color: #555;
+    font-size: 0.85rem; /* Smaller font size for copyright */
+    text-align: center;
+    width: 100%;
+    margin-top: 1.5rem; /* Reduced top margin */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-brand {
+        margin-bottom: 1rem; /* Reduce bottom margin on smaller screens */
+        margin-left: 0;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .footer-explore,
+    .footer-connect,
+    .footer-services {
+        flex-basis: 100%;
+        text-align: center;
+        margin-bottom: 1rem; /* Reduced margin for smaller screens */
+    }
+}

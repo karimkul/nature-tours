@@ -1,0 +1,27 @@
+.error-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    background-color: #fef2f2;
+}
+
+.error-box {
+    background: white;
+    padding: 2rem 3rem;
+    border: 2px solid #f87171;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.error-box h2 {
+    color: #dc2626;
+    margin-bottom: 0.5rem;
+}
+
+.error-box p {
+    color: #4b5563;
+}
