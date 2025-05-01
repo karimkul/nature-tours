@@ -31,6 +31,7 @@ function HomePage() {
         queryKey: ["tours"],
         queryFn: fetchTours
     });
+    console.log(data);
 
     if (isLoading) {
         return <Loader />;
@@ -41,13 +42,16 @@ function HomePage() {
             <Error message={error.message || "Oops! Something went wrong."} />
         );
     }
-
-    const tours = data?.data?.data || [];
-
+    const tours = data || [];
     const popularTours = tours
         .slice()
-        .sort((a, b) => b.ratingsAverage - a.ratingsAverage)
+        .sort((a, b) => {
+            const aRating = a.ratingsAverage || 0; // Default to 0 if no rating
+            const bRating = b.ratingsAverage || 0; // Default to 0 if no rating
+            return bRating - aRating;
+        })
         .slice(0, 4);
+    console.log(popularTours);
 
     return (
         <div>

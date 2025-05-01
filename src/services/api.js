@@ -33,3 +33,14 @@ export const fetchSingleTour = async (id) => {
         throw new Error("Failed to fetch tour");
     }
 };
+
+// export const fetchReviews = async (tourId) => {
+//     const response = await fetch(`/api/v1/tours/${tourId}/reviews`);
+
+//     if (!response.ok) {
+//         throw new Error(`HTTP error! status: ${response.status}`);
+//     }
+
+//     const data = await response.json();
+//     return data;
+// };

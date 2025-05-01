@@ -123,3 +123,36 @@
     font-weight: bold;
     color: #e60000; /* Red for price */
 }
+
+/* New group styles for meta info */
+.tour-meta {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.tour-meta-item {
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Wrap View Details button nicely */
+.view-details-wrapper {
+    margin-top: 1.5rem;
+}
+
+.view-details {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #4682b4; /* Steel blue */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.view-details:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}

@@ -13,6 +13,7 @@ const Modal = ({ onClose, onLogin }) => {
                 "http://localhost:3000/api/v1/users/login",
                 { email, password }
             );
+            console.log("Respond", response);
 
             if (response.status === 200) {
                 const userData = {
